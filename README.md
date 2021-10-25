@@ -41,6 +41,7 @@ Corresponding [Paper](https://arxiv.org/abs/2007.16104) and a [code example](htt
     d. After doing SSL on the Phase 1 Target data, the classification performance was not good and hence this model was discontinued after that and not used on the Phase 2 data.
 
 2. Blanco 2020 CNN-based Model - [Paper](https://arxiv.org/ftp/arxiv/papers/2103/2103.16215.pdf)
+
     a. Data sampled to be balanced epoch-wise during training using [Imbalanced Dataset Sampler](https://github.com/ufoym/imbalanced-dataset-sampler)
     
     b. Tried Transfer Learning by - 
