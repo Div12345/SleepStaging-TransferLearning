@@ -40,7 +40,14 @@ Corresponding [Paper](https://arxiv.org/abs/2007.16104) and a [code example](htt
     
     d. After doing SSL on the Phase 1 Target data, the classification performance was not good and hence this model was discontinued after that and not used on the Phase 2 data.
 
-2. CNN Model - [Paper](https://arxiv.org/ftp/arxiv/papers/2103/2103.16215.pdf)
+2. Blanco 2020 CNN-based Model - [Paper](https://arxiv.org/ftp/arxiv/papers/2103/2103.16215.pdf)
+    a. Data sampled to be balanced epoch-wise during training using [Imbalanced Dataset Sampler](https://github.com/ufoym/imbalanced-dataset-sampler)
+    
+    b. Tried Transfer Learning by - 
+    
+        i. Freezing all the layers except the last fully connected layer and fine-tuning only that.
+        
+        ii. Fine-tuning the entire network.
 
 3. Attention Sleep Model – [Papers with Code Link](https://paperswithcode.com/paper/an-attention-based-deep-learning-approach-for)
 
@@ -54,6 +61,7 @@ Corresponding [Paper](https://arxiv.org/abs/2007.16104) and a [code example](htt
 ## Tools
 
 Primary Libraries - Pytorch, Skorch(wrapper on PyTorch to resemble to scikit-learn API) and Braindecode.
+[Imbalanced Dataset Sampler](https://github.com/ufoym/imbalanced-dataset-sampler)
 
 [Weights and Biases](https://wandb.ai/) was used to log the model and training - This is optional and was used for convinience to view the results automatically compiled and for comparisons.
 
